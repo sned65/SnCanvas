@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyNiFi</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/WfFrame.css">
+</head>
+<body>
+<div class="w3-container">
+    <div class="w3-bar w3-margin">
+        Actions:
+        <button class="w3-button w3-teal" onclick='wfPanel.addAction("regex");'>&#8475;&#8495;</button>
+        <button class="w3-button w3-teal" onclick='wfPanel.addAction("kv");'>KV</button>
+        <button class="w3-button w3-teal" onclick='wfPanel.addAction("csv");'>CSV</button>
+        <span class="w3-margin-left">Navigations:</span>
+        <button class="w3-button w3-teal nav-button" onclick='wfPanel.addNav();'>&rarr;</button>
+        <button class="w3-button w3-teal nav-button">&#8649;</button>
+        <button class="w3-button w3-teal nav-button">&#8692; &#8497;</button>
+        <button class="w3-button w3-teal nav-button">&#8692; &#8475;&#8495;</button>
+    </div>
+    <div class="w3-row">
+        <div id="wf_canvas_wrapper" class="w3-container w3-twothird w3-border wfp-wrapper">
+            <div class="wfp-bg">
+                <canvas id="wf_canvas_bg"></canvas>
+            </div>
+            <div class="wfp-main">
+                <canvas id="wf_canvas_main" class="wfp-main-canvas" tabindex="1000"></canvas>
+            </div>
+        </div>
+        
+        <div class="w3-card w3-third">
+            <div class="w3-container w3-teal">
+                <h3>Parameters</h3>
+            </div>
+            <div id="action_pars" class="w3-container">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/JsUtils.js"></script>
+<script type="text/javascript" src="js/Arrow.js"></script>
+<script type="text/javascript" src="js/ActionNode.js"></script>
+<script type="text/javascript" src="js/Grid.js"></script>
+<script type="text/javascript" src="js/WfPanel.js"></script>
+<script type="text/javascript" src="js/WfFrame.js"></script>
+</body>
+</html>

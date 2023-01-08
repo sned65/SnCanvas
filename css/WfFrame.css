@@ -1,0 +1,29 @@
+.wfp-wrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.wfp-bg {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: 'white'
+}
+
+.wfp-main {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.wfp-main-canvas {
+    outline: none; 
+}
+
+.wfp-pointer {
+    cursor: pointer;
+}
+.wfp-progress {
+    cursor: progress;
+}
